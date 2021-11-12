@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="colorPrimary">@color/cor_primaria</item>
+        <item name="colorPrimaryDark">@color/cor_primaria_dark</item>
+        <item name="colorAccent">#00cc00</item>
+    </style>
+
+    <color name="cor_primaria">#C10000</color>
+    <color name="cor_primaria_dark">#7E0101</color>
+</resources>

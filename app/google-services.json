@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "118274865669",
+    "project_id": "mobcube-keep-up",
+    "storage_bucket": "mobcube-keep-up.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118274865669:android:fe166e3699e7fbff87ba6c",
+        "android_client_info": {
+          "package_name": "com.mobcube.keepup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118274865669-i9flq9805s1pvk20vhuultj1f9s009rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh15Gz4fB-gjzLAgNp_uZ6dHEYQQaqWBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118274865669-i9flq9805s1pvk20vhuultj1f9s009rb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

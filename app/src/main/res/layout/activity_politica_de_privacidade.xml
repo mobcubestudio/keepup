@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.PoliticaDePrivacidadeActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Política de privacidade"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="O app Keep Up é de propriedade da empresa MobCube Studio, que é a controladora de seus dados pessoais.\n\n
+Nós adotamos esta Política de Privacidade, que determina como nós estamos processando as informações coletadas pelo app Keep Up e também explica por quais razões nós precisamos coletar dados pessoais sobre você. Portanto, você deve ler esta Política de Privacidade antes de usar o app Keep Up.\n\n
+Nós cuidamos dos seus dados pessoais e assumimos a responsabilidade de garantir a confidencialidade e segurança de suas informações pessoais."
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estes são as informações pessoais que coletamos:"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Quando você visita o app Keep Up, nós automaticamente coletamos certas informações sobre seu dispositivo, incluindo nome e e-mail."
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Por que fazemos o processamento dos seus dados?"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Nossa maior prioridade é a segurança dos dados pessoais dos usuários e, portanto, nós podemos processar apenas dados mínimos, apenas enquanto for absolutamente necessário para a manutenção do app. Informações coletadas automaticamente são usadas para identificar possíveis casos de abuso e estabelecer dados estatísticos sobre o uso do app. Esses dados estatísticos não são agregados de outras formas que permitam a identificação de usuários específicos do sistema.\n\n
+Estes dados são utilizados única e exclusivamente para a funcionalidade do app. É a única forma de identificarmos quais veículos pertencem a cada usuário. Usuários que não tenham certeza sobre quais informações pessoais são obrigatórias são convidados a entrarem em contato conosco pelo e-mail mobcubestudio@gmail.com.
+"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seus direitos:"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Se você morar na Europa, estes são os direitos garantidos quando aos seus dados pessoais:\n\n
+•	O direito de ser informado.\n
+•	O direito ao acesso.\n
+•	O direito à retificação.\n
+•	O direito de deletar.\n
+•	O direito de restringir o processamento.\n
+•	O direito da portabilidade de dados.\n
+•	O direito à objeção.\n
+•	Direitos em relação a tomadas de decisão automaticas e à perfilagem.\n\n
+Se você quiser exercitar esses direitos, por favor entre em contato conosco usando os dados de contato abaixo.\n\n
+Adicionalmente, se você mora na Europa, nós afirmamos que estamos processando suas informações com a finalidade de cumprir contratos que possamos ter firmado com você ou para excercer os interesses legítimos da nossa empresa listados acima.
+"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Segurança das informações:"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Nós garantimos que as informações que você fornece estão em servidores e computadores armazenados em ambientes seguros e controlados, protegidos de acessos, usos e divulgações não-autorizadas. Nós matemos medidas de segurança administrativas, técnicas e físicas razoáveis, com finalidade de proteger os dados pessoais sob nossa custódia de de acessos, usos, modificações e divulgações não-autorizadas. Apesar disso, nenhuma transmissão de dados pela Internet ou por sistemas sem fio pode ser garantida."
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Declaração legal:"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Nós vamos divulgar qualquer informação que coletarmos, usarmos ou recebermos caso tal divulgação seja solicitada ou permitida por lei, de forma a cumprir intimações ou processos judiciais similares, e também quando considerarmos em boa fé que a divulgação é necessária para a proteção de nossos direitos, para a proteção da segurança de outros, para investigações de fraude ou para responder a uma solicitação do governo."
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DInformações de contato:"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Se você quiser entrar em contato conosco para saber mais sobre esta Política de Privacidade, ou quiser acessar quaisquer informações relativas aos seus direitos individuais e às suas Informações Pessoais, você poderá enviar um e-mail para o endereço mobcubestudio@gmail.com."
+            />
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

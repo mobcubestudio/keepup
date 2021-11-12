@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/KeepUp/app/src/main/res/drawable/barra_progressao.xml" value="0.1125" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/layout/activity_add_veiculo.xml" value="0.22" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/layout/activity_login.xml" value="0.4083333333333333" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/layout/activity_perfil.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/layout/activity_politica_de_privacidade.xml" value="0.4331491712707182" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/layout/activity_veiculo.xml" value="0.25" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/layout/color_spinner_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/layout/meus_veiculos_item.xml" value="0.33" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/layout/pop_erro.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/layout/popup_atualizar_km.xml" value="0.45955451348182885" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/layout/popup_novo_reparo.xml" value="0.1826086956521739" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/layout/reparos_item.xml" value="0.5" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1125" />
+        <entry key="..\:/Android/KeepUp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

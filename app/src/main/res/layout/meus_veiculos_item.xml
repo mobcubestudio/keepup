@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    android:id="@+id/linha_meu_veiculo_item"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/iv_foto_meu_veiculo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/moto_default" />
+
+        <TextView
+            android:id="@+id/tv_apelido_meu_veiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/iv_foto_meu_veiculo"
+            android:text="nome do veiculo"
+            android:textColor="@color/cor_primaria"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv_modelo_meu_veiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_foto_meu_veiculo"
+            android:layout_marginTop="40dp"
+            android:text="nome do veiculo" />
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
