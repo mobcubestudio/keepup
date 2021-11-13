@@ -28,16 +28,25 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_toEndOf="@+id/iv_foto_meu_veiculo"
-            android:text="nome do veiculo"
+            android:text=""
             android:textColor="@color/cor_primaria"
             android:textSize="17dp" />
+
         <TextView
             android:id="@+id/tv_modelo_meu_veiculo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/iv_foto_meu_veiculo"
             android:layout_marginTop="40dp"
-            android:text="nome do veiculo" />
+            android:layout_toEndOf="@+id/iv_foto_meu_veiculo"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_km_atual_meu_veiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_toEndOf="@+id/iv_foto_meu_veiculo"
+            android:text="" />
     </RelativeLayout>
 
 

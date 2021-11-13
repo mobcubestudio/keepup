@@ -103,6 +103,20 @@ public class VeiculoActivity extends AppCompatActivity {
                     tvApelido.setText(doc.getString("apelido"));
                     tvModelo.setText(doc.getString("modelo"));
                     tvUltimaKmInformada.setText(doc.get("km_atual").toString());
+
+                    if(doc.get("tipo").equals("Moto")){
+                        ivFoto.setImageResource(R.drawable.moto_default);
+                    }
+                    if(doc.get("tipo").equals("Carro")){
+                        ivFoto.setImageResource(R.drawable.carro_default);
+                    }
+                    if(doc.get("tipo").equals("Camionete")){
+                        ivFoto.setImageResource(R.drawable.camionete_default);
+                    }
+                    if(doc.get("tipo").equals("Caminhão")){
+                        ivFoto.setImageResource(R.drawable.caminhao_default);
+                    }
+
                     StorageReference fotoRef = FirebaseStorage.getInstance().getReference();
                     fotoRef.child("veiculos/"+doc.getId())
                             .getDownloadUrl()

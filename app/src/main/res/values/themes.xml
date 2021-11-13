@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.KeepUp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.KeepUp" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/cor_primaria</item>
         <item name="colorPrimaryVariant">@color/cor_primaria_dark</item>

@@ -42,7 +42,7 @@ public class AddVeiculoActivity extends AppCompatActivity {
 
     Spinner spTipo;
     EditText etMarca, etModelo, etAno,etKmInicial, etApelido;
-    Button btnSalvar;
+    Button btnSalvar, btnVoltar;
 
     FirebaseFirestore db;
 
@@ -133,6 +133,17 @@ public class AddVeiculoActivity extends AppCompatActivity {
 
             }
         });
+
+
+        btnVoltar = findViewById(R.id.btn_voltar);
+        btnVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),PerfilActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         fotoReceita = findViewById(R.id.iv_foto);
         fotoReceita.setOnClickListener(new View.OnClickListener() {

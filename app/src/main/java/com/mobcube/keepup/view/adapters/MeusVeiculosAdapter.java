@@ -62,11 +62,21 @@ public class MeusVeiculosAdapter  extends RecyclerView.Adapter<MeusVeiculosAdapt
         MeusVeiculos meusVeiculos = meusVeiculosArrayList.get(position);
         holder.tvApelido.setText(meusVeiculos.getApelido());
         holder.tvModelo.setText(meusVeiculos.getModelo());
+        holder.tvKmAtual.setText(meusVeiculos.getKm_atual()+" km");
 
 
 
+        if(meusVeiculos.getTipo().equals("Moto")){
+            holder.ivFoto.setImageResource(R.drawable.moto_default);
+        }
         if(meusVeiculos.getTipo().equals("Carro")){
             holder.ivFoto.setImageResource(R.drawable.carro_default);
+        }
+        if(meusVeiculos.getTipo().equals("Camionete")){
+            holder.ivFoto.setImageResource(R.drawable.camionete_default);
+        }
+        if(meusVeiculos.getTipo().equals("Caminhão")){
+            holder.ivFoto.setImageResource(R.drawable.caminhao_default);
         }
 
         StorageReference fotoRef = FirebaseStorage.getInstance().getReference();
@@ -98,7 +108,7 @@ public class MeusVeiculosAdapter  extends RecyclerView.Adapter<MeusVeiculosAdapt
 
     public static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         CardView linha;
-        TextView tvApelido, tvMarca, tvModelo, tvAno;
+        TextView tvApelido, tvMarca, tvModelo, tvAno, tvKmAtual;
         ImageView ivFoto;
         //StorageReference fotoRef;
 
@@ -107,6 +117,7 @@ public class MeusVeiculosAdapter  extends RecyclerView.Adapter<MeusVeiculosAdapt
 
             tvApelido = itemView.findViewById(R.id.tv_apelido_meu_veiculo);
             tvModelo = itemView.findViewById(R.id.tv_modelo_meu_veiculo);
+            tvKmAtual = itemView.findViewById(R.id.tv_km_atual_meu_veiculo);
             ivFoto = itemView.findViewById(R.id.iv_foto_meu_veiculo);
             linha = itemView.findViewById(R.id.linha_meu_veiculo_item);
 

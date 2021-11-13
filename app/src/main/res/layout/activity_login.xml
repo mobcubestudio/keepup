@@ -58,6 +58,7 @@
             android:id="@+id/btn_login_google"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +79,19 @@
                 android:textAlignment="center"
                 android:textSize="11dp"
                 />
+
+
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:backgroundTint="@color/cinza"
+            android:layout_marginTop="20dp"
+            />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
