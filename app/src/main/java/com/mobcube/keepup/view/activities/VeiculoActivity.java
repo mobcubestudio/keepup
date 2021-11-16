@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -61,7 +62,7 @@ public class VeiculoActivity extends AppCompatActivity {
     //POP UPS
     AlertDialog.Builder alertBuilder, alertKmAtual;
     AlertDialog dialog;
-    Button btnNovoReparo, btnAtualizarKm;
+    Button btnNovoReparo, btnAtualizarKm, btnFinalizados;
 
     //LISTA DE REPAROS
     RecyclerView rvReparos;
@@ -153,6 +154,7 @@ public class VeiculoActivity extends AppCompatActivity {
         });
 
 
+
         //LISTA DE REPAROS
         progressDialog = new ProgressDialog(this);
         progressDialog.setCancelable(false);
@@ -177,6 +179,7 @@ public class VeiculoActivity extends AppCompatActivity {
     private void carregaDB() {
         db.collection("reparo")
                 .whereEqualTo("id_veiculo",idVeiculo)
+                .whereEqualTo("status","ativo")
                 .orderBy("percorrido_falta", Query.Direction.ASCENDING)
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
@@ -197,6 +200,7 @@ public class VeiculoActivity extends AppCompatActivity {
                             for (DocumentChange dc : value.getDocumentChanges()) {
                                 if (dc.getType() == DocumentChange.Type.ADDED) {
                                     Reparos rep = new Reparos(
+                                            dc.getDocument().getId(),
                                             dc.getDocument().getString("tipo"),
                                             dc.getDocument().getString("id_veiculo"),
                                             Integer.parseInt(String.valueOf(dc.getDocument().get("km_reparo"))),
@@ -264,7 +268,7 @@ public class VeiculoActivity extends AppCompatActivity {
                             .addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void unused) {
-                                    Toast.makeText(getApplicationContext(), "A Kilometragem foi atualizada com sucesso.", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "A Quilometragem foi atualizada com sucesso.", Toast.LENGTH_SHORT).show();
                                     dialog.dismiss();
 
                                     //LISTA OS REPAROS DO VEICULO PARA ALTERAR O CAMPO PERCORRIDO
@@ -383,6 +387,7 @@ public class VeiculoActivity extends AppCompatActivity {
                     reparo.put("percorrido",(kmAtual-Integer.parseInt(cpKmAtualReparo.getText().toString())));
                     reparo.put("percorrido_falta",(Integer.parseInt(cpDuracaoReparo.getText().toString())-(kmAtual-Integer.parseInt(cpKmAtualReparo.getText().toString()))));
                     reparo.put("id_veiculo",idVeiculo);
+                    reparo.put("status","ativo");
                     reparo.put("data_hora", FieldValue.serverTimestamp());
 
                     db.collection("reparo")
@@ -436,4 +441,6 @@ public class VeiculoActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),PerfilActivity.class);
         startActivity(intent);
     }
+
+
 }

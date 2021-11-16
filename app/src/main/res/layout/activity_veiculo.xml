@@ -110,6 +110,7 @@
                         android:layout_height="wrap_content"
                         android:text="Atualizar Km"
                         android:layout_marginStart="15dp"
+                        android:backgroundTint="@color/verde"
                         />
                 </LinearLayout>
 
@@ -117,6 +118,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/rv_lista_reparos"
+                    tools:listitem="@layout/meus_veiculos_item"
                     />
             </LinearLayout>
 

@@ -18,25 +18,26 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:id="@+id/ll_nome"
             >
+
             <TextView
                 android:id="@+id/tv_tipo_reparo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
                 android:layout_marginTop="15dp"
                 android:textColor="@color/black"
-                android:textSize="17dp"
-                android:layout_alignParentLeft="true"
-                />
+                android:textSize="17dp" />
+
             <TextView
                 android:id="@+id/tv_falta_reparo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:layout_marginTop="15dp"
                 android:textColor="@color/cor_primaria"
                 android:textSize="17dp"
-                android:layout_alignParentRight="true"
 
                 />
         </RelativeLayout>
@@ -63,6 +64,34 @@
             android:text="15/10/2021"
             android:layout_marginBottom="15dp"
             />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:layout_below="@id/ll_nome"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_finaliza_reparo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_finalizar"
+                />
+
+            <ImageView
+                android:id="@+id/iv_delete_reparo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete"
+                android:layout_marginStart="7dp"
+                />
+
+        </LinearLayout>
 
 
         <RelativeLayout

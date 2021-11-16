@@ -19,7 +19,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/roboto"
-            android:text="ATUALIZAR KILOMETRAGEM"
+            android:text="ATUALIZAR QUILOMETRAGEM"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/cor_primaria"
@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Informe a Kilometragem atual que consta no painel de seu veículo."
+            android:text="Informe a quilometragem atual que consta no painel de seu veículo."
             android:layout_marginBottom="20dp"
             android:textSize="12dp"
             android:textAlignment="center"
@@ -44,6 +44,7 @@
             android:hint="Ex.: 87950"
             android:inputType="number"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_background"
             />
 
 
