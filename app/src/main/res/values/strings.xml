@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">Keep Up</string>
-    <string name="versao">Versão 0.5</string>
+    <string name="versao">Versão 0.6</string>
     <string name="adMobReal">ca-app-pub-6804099491712588~4664181546</string>
     <string name="adMobTeste">ca-app-pub-3940256099942544~3347511713</string>
     <string name="banner_teste">ca-app-pub-3940256099942544/6300978111</string>
     <string name="banner_main">ca-app-pub-6804099491712588/3876879332</string>
+    <string name="banner_lista_reparos">ca-app-pub-6804099491712588/7957850291</string>
 
     <string-array name="tipo_veiculo">
         <item>Selecione o tipo</item>
