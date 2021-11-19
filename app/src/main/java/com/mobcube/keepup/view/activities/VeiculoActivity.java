@@ -274,6 +274,7 @@ public class VeiculoActivity extends AppCompatActivity {
                                     //LISTA OS REPAROS DO VEICULO PARA ALTERAR O CAMPO PERCORRIDO
                                     db.collection("reparo")
                                             .whereEqualTo("id_veiculo",idVeiculo)
+                                            .whereEqualTo("status","ativo")
                                             .orderBy("data_hora", Query.Direction.ASCENDING)
                                             .addSnapshotListener(new EventListener<QuerySnapshot>() {
                                                 @Override
