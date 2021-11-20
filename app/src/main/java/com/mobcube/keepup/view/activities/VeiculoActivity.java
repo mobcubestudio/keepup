@@ -21,6 +21,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -75,6 +80,8 @@ public class VeiculoActivity extends AppCompatActivity {
 
     ImageView ivFoto;
 
+    AdView mAdView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,9 +98,17 @@ public class VeiculoActivity extends AppCompatActivity {
 
         tvUltimaKmInformada = findViewById(R.id.tv_ultima_km_informada);
 
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
 
+            }
+        });
 
-        Log.d("Log","ISO==> MEU VEICULO: "+idVeiculo);
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
         DocumentReference reference = db.collection("veiculos").document(idVeiculo);
         reference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {

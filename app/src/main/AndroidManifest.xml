@@ -8,25 +8,39 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.KeepUp">
+        android:theme="@style/Theme.KeepUp"
+        android:largeHeap="true"
+        >
         <activity
             android:name=".view.activities.PoliticaDePrivacidadeActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".view.activities.VeiculoActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".view.activities.AddVeiculoActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".view.activities.PerfilActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".view.activities.LoginActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".view.activities.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
